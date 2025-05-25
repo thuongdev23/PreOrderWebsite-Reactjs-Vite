@@ -1,54 +1,3 @@
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import React from 'react';
-// import Navbar from "./components/Navbar/Navbar.jsx";
-// import Headline from "./components/HeadingLine/Headline.jsx";
-// import Food from "./Food/Food.jsx";
-// import Drink from "./components/Drink/Drink.jsx";
-// import Dessert from "./components/Dessert/Dessert.jsx";
-// import FoodPage from "./Food/FoodPage";
-// import DrinkPage from "./components/Drink/DrinkPage.jsx";
-// import DessertPage from "./components/Dessert/DessertPage.jsx";
-// import ItemDetail from "./components/Cart/ItemDetail.jsx";
-// import Cart from "./components/Cart/Cart.jsx";
-
-// const Home = () => {
-//   return (
-//     <>
-//       <Headline />
-//       <Food />
-//       <Drink />
-//       <Dessert />
-//     </>
-//   );
-// };
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <Navbar />
-
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/food" element={<FoodPage />} />
-//         <Route path="/drink-page" element={<DrinkPage />} />
-//         <Route path="/dessert-page" element={<DessertPage />} />
-//         <Route path="/cart" element={<Cart />} />
-//         <Route path="/item/:slug" element={<ItemDetail />} />
-
-
-//       </Routes>
-//     </Router>
-//   );
-// };
-
-// export default App;
-
-
-
-
-
-
-
 
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -66,7 +15,8 @@ import Promo from "./components/Promo/Promo.jsx";
 
 import AdminStock from "./components/AdminStock.jsx";
 import { initInventory } from "./components/utils/inventory.js";
-import foodData from "./Food/FoodData.js";
+// import foodData from "./Food/FoodData.js";
+// import foodData from "./Food/foodData.js";
 import Snack from "./components/Snack /Snack.jsx";
 import PromoPage from "./components/Promo/PromoPage.jsx";
 import SnackPage from "./components/Snack /SnackPage.jsx";
@@ -84,9 +34,9 @@ const Home = () => {
 };
 
 const App = () => {
-  useEffect(() => {
-    initInventory(foodData); // ✅ Initialize stock once
-  }, []);
+  // useEffect(() => {
+  //   initInventory(foodData); // ✅ Initialize stock once
+  // }, []);
 
   return (
     <Router>
