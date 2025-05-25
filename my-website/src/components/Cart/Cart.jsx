@@ -60,7 +60,7 @@ const Cart = () => {
 
     emailjs.send("service_qxcwjzt", "template_h01engg", message,"lV3Tl03rNYuousokZ").then(
       () => {
-        alert("Order sent! We'll confirm with you shortly.");
+        alert("Order sent! We'll confirm with you shortly.If you make online payment please send the receipt to Whatsapp No: +62 859 528 766 09");
       },
       (error) => {
         console.error("Failed to send order:", error);
