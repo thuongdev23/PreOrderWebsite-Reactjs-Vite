@@ -20,7 +20,7 @@ const Dessert = () => {
                 />
               </div>
               <h3 className="mt-2 font-semibold text-sm sm:text-base">{item.title}</h3>
-              <p className="text-sm text-gray-500">{item.price}</p>
+              <p className="text-sm text-gray-500">₺{item.price}</p>
             </div>
           </Link>
         ))}

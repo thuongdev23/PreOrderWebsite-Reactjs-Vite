@@ -1,14 +1,14 @@
 // src/pages/FoodPage.jsx
 import React from "react";
-import drinkData from "./drinkData";
+import snackData from "./snackData";
 import { Link } from "react-router-dom";
 
-const DrinkPage = () => {
+const SnackPage = () => {
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6 text-center">All Drink Items</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">All Snack Items</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {drinkData.map((item) => (
+        {snackData.map((item) => (
                     <Link to={`/item/${item.slug}`} key={item.id}>
 
              <div className="bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
@@ -29,4 +29,4 @@ const DrinkPage = () => {
   );
 };
 
-export default DrinkPage;
+export default SnackPage;

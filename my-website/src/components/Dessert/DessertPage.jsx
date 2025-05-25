@@ -1,12 +1,16 @@
 // src/pages/FoodPage.jsx
 import React from "react";
 import dessertData from "./dessertData";
+import { Link } from "react-router-dom";
+
 const DessertPage = () => {
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-6 text-center">All Dessert Items</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {dessertData.map((item) => (
+            <Link to={`/item/${item.slug}`} key={item.id}>
+
             <div className="bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition-all duration-200">
             <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg">
               <img
@@ -16,8 +20,9 @@ const DessertPage = () => {
               />
             </div>
             <h3 className="mt-2 font-semibold text-sm sm:text-base">{item.title}</h3>
-            <p className="text-sm text-gray-500">{item.price}</p>
+            <p className="text-sm text-gray-500">₺{item.price}</p>
           </div>
+          </Link>
         ))}
       </div>
     </div>

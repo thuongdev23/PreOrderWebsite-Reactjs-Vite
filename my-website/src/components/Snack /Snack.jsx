@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import drinkData from "./drinkData";
+import snackData from "./snackData";
 
-const Drink = () => {
-  const previewItems = drinkData.slice(0, 4); // show only 4 items
+const Snack = () => {
+  const previewItems = snackData.slice(0, 4); // show only 4 items
 
   return (
     <div className="p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-center">Drink</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">snack</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {previewItems.map((item) => (
           <Link to={`/item/${item.slug}`} key={item.id}>
@@ -27,7 +27,7 @@ const Drink = () => {
       </div>
       <div className="mt-4 text-center">
         <Link
-          to="/drink-page"
+          to="/snack-page"
           className="inline-block bg-white border px-4 py-2 rounded hover:bg-gray-100 text-sm"
         >
           View all
@@ -37,4 +37,4 @@ const Drink = () => {
   );
 };
 
-export default Drink;
+export default Snack;

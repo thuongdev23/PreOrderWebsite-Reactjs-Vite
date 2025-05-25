@@ -4,36 +4,63 @@ const dessertData = [
       id: 1,
       img: '/assets/tayaki.jpg',
       title: "Taiyaki",
-      price: "₺50,00",
-      slug: "Taiyaki"
+      price: 50,
+      description: '2 Pcs of fish-shaped pancake filled with sweet or savory options. Crispy on the outside, soft on the inside. Cuteness you can bite.',
+      slug: "Taiyaki",
+      options: {
+        fillings: [
+          { label: "Cheese Filling", price: 50 },
+          { label: "Chocolate Filling", price: 50 },
+          { label: "Red Bean Filling", price: 60 }
+        ],
+        batters: [
+          { label: "Original (Vanilla)" },
+          { label: "Taro" }
+        ]
+      }
     },
     {
       id: 2,
       img: '/assets/takoyaki.jpg',
       title: "Takoyaki",
-      price: "₺75,00",
-      slug: "takoyaki"
+      price: 75,
+      description: '5 pcs of fried batter shaped like balls, topped with takoyaki sauce, mayo, bonito flakes, and seaweed. The ultimate umami bomb.',
+      slug: "takoyaki",
+      options: {
+        fillings: [
+          { label: "Cheese Filling", price: 75 },
+          { label: "Chocolate Filling", price: 75 },
+          { label: "Red Bean Filling", price: 75 }
+        ],
+        batters: [
+          { label: "Original (Vanilla)" },
+          { label: "Taro" }
+        ]
+      }
     },
     {
       id: 3,
-      img: '/assets/bakwan.jpg',
-      title: "Es Mambo Buah",
-      price: "₺50,00",
-      slug: "es-mambo-buah"
+      img: '/assets/onde-onde.jpg',
+      title: "Onde-onde",
+      price: 60,
+      description: '3 pcs of glutinous rice ball with mung bean filling and sesame coating.',
+      slug: "Onde-onde",
     },
     {
       id: 4,
-      img: '',
-      title: "Kumquat Tea - Si Asem Ceria",
-      price: "₺59,00",
-      slug: "Kumquat Tea - Si Asem Ceria"
+      img: '/assets/es-kue-gabus.png',
+      title: "Es Kue Gabus",
+      price: 50,
+      description: '3 Pcs of Classic icy cake bars from childhood. Sweet, nostalgic, and fun to eat!',
+      slug: "Es Kue Gabus"
     },
     {
       id: 5,
-      img: "/assets/photo5.jpg",
-      title: "Nasi Kuning",
-      price: "₺60,00",
-      slug:  "Nasi Kuning"
+      img: "/assets/es-mambo.jpg",
+      title: "Es Mambo Buah",
+      price: 50,
+      description: '3 pcs of frozen fruit pops using fresh seasonal fruits',
+      slug:  "Es Mambo Buah"
     },
     // Add more as needed...
   ];

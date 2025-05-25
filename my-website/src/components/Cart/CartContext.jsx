@@ -1,35 +1,42 @@
-// src/context/CartContext.jsx
-import { createContext, useState } from "react";
-
+import React, { createContext, useContext, useState, useEffect } from "react";
 export const CartContext = createContext();
-
+export const useCart = () => useContext(CartContext);
 export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const stored = localStorage.getItem("cart");
+    return stored ? JSON.parse(stored) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (item, quantity, note) => {
-    const existingItemIndex = cartItems.findIndex(i => i.id === item.id);
-    if (existingItemIndex !== -1) {
-      const updatedCart = [...cartItems];
-      updatedCart[existingItemIndex].quantity += quantity;
-      updatedCart[existingItemIndex].note += note ? ` | ${note}` : '';
-      setCartItems(updatedCart);
+    const uniqueKey = `${item.slug}-${item.selectedFilling || ""}-${item.selectedBatter || ""}-${note || ""}`;
+    const existingIndex = cart.findIndex((i) => i.uniqueKey === uniqueKey);
+    if (existingIndex !== -1) {
+      const updatedCart = [...cart];
+      updatedCart[existingIndex].quantity += quantity;
+      setCart(updatedCart);
     } else {
-      setCartItems(prev => [...prev, { ...item, quantity, note }]);
+      setCart([...cart, { ...item, quantity, note, uniqueKey }]);
     }
   };
 
-  const updateQuantity = (id, qty) => {
-    setCartItems(prev =>
-      prev.map(item => (item.id === id ? { ...item, quantity: qty } : item))
+  const updateCart = (uniqueKey, quantity, note) => {
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.uniqueKey === uniqueKey ? { ...item, quantity, note } : item
+      )
     );
   };
 
-  const removeFromCart = (id) => {
-    setCartItems(prev => prev.filter(item => item.id !== id));
+  const removeFromCart = (uniqueKey) => {
+    setCart((prevCart) => prevCart.filter((item) => item.uniqueKey !== uniqueKey));
   };
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, updateQuantity, removeFromCart }}>
+    <CartContext.Provider value={{ cart, addToCart, updateCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );
