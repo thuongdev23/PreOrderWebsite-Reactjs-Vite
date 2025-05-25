@@ -15,11 +15,11 @@ const Navbar = () => {
     { id: 6, name: "Snack", link: "/snack-page" },
   ];
 
-  const DropdownLinks = [
-    { id: 1, name: "Combo", link: "/#" },
-    { id: 2, name: "Food", link: "/#" },
-    { id: 3, name: "Drink", link: "/#" },
-  ];
+//   const DropdownLinks = [
+//     { id: 1, name: "Combo", link: "/#" },
+//     { id: 2, name: "Food", link: "/#" },
+//     { id: 3, name: "Drink", link: "/#" },
+//   ];
 
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 text-black relative z-40">
@@ -76,15 +76,15 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <li className="group relative cursor-pointer">
+          {/* <li className="group relative cursor-pointer">
             <a
               href="#"
               className="text-xl flex items-center gap-1 hover:text-primary"
             >
               Best Selling
               <FaCaretDown className="transition-transform duration-200 group-hover:rotate-180" />
-            </a>
-            <div className="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-1 z-50">
+            </a> */}
+            {/* <div className="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-1 z-50">
               <ul>
                 {DropdownLinks.map((data) => (
                   <li key={data.id}>
@@ -97,8 +97,8 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-            </div>
-          </li>
+            </div> */}
+          {/* </li> */}
         </ul>
       </div>
 

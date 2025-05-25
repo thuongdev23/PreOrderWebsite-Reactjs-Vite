@@ -28,7 +28,7 @@ const Food = () => {
       </div>
       <div className="mt-4 text-center">
         <Link
-          to="/food"
+          to="/food-page"
           className="inline-block bg-white border px-4 py-2 rounded hover:bg-gray-100 text-sm"
         >
           View all

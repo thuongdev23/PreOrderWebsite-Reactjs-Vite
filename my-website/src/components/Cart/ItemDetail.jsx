@@ -7,12 +7,15 @@ import promoData from "../Promo/promoData";
 import snackData from "../Snack /snackData";
 import { useCart } from "./CartContext";
 import { getGlobalPreorder } from "../utils/globalPreorder";
+import { useNavigate } from "react-router-dom";
+
 
 const ItemDetail = () => {
   const { slug } = useParams();
   const allItems = [...foodData, ...drinkData, ...dessertData, ...promoData, ...snackData];
   const item = allItems.find((i) => i.slug === slug);
   const { addToCart } = useCart();
+  const navigate = useNavigate();
 
   const [quantity, setQuantity] = useState(1);
   const [note, setNote] = useState("");
@@ -65,6 +68,7 @@ const ItemDetail = () => {
 
     addToCart(itemWithOptions, quantity, note);
     alert("Item added to cart!");
+    navigate("/");
   };
 
   return (
