@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import foodData from "../Food/FoodData";
+import foodData from "../Food/foodData.js";
 // import { getInventory, setInventory } from "./components/utils/inventory.js";
 // import {setInventory } from "./utils/inventory.js";
 import { getInventory, setInventory } from "./utils/inventory.js";

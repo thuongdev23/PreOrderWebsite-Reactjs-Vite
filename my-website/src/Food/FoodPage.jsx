@@ -1,6 +1,6 @@
 // src/pages/FoodPage.jsx
 import React from "react";
-import foodData from "./FoodData";
+import foodData from "./foodData.js";
 import { Link } from "react-router-dom";
 
 

@@ -15,8 +15,6 @@ import Promo from "./components/Promo/Promo.jsx";
 
 import AdminStock from "./components/AdminStock.jsx";
 import { initInventory } from "./components/utils/inventory.js";
-// import foodData from "./Food/FoodData.js";
-// import foodData from "./Food/foodData.js";
 import Snack from "./components/Snack /Snack.jsx";
 import PromoPage from "./components/Promo/PromoPage.jsx";
 import SnackPage from "./components/Snack /SnackPage.jsx";
