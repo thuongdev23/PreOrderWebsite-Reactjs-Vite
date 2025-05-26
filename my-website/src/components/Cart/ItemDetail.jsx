@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import foodData from "../../Food/foodData";
+import foodData from "../Food/foodData";
 import drinkData from "../Drink/drinkData";
 import dessertData from "../Dessert/dessertData";
 import promoData from "../Promo/promoData";
@@ -47,13 +47,11 @@ const ItemDetail = () => {
       if (t?.price) finalPrice += parseFloat(t.price);
     });
   }
-
   const handleAdd = () => {
     if (isPreorderClosed) {
       alert(isBefore ? "Preorder has not started yet." : "Preorder has ended.");
       return;
     }
-
     const itemWithOptions = {
       ...item,
       selectedFilling,
@@ -70,7 +68,6 @@ const ItemDetail = () => {
     alert("Item added to cart!");
     navigate("/");
   };
-
   return (
     <div className="max-w-md mx-auto p-6 bg-white rounded shadow mt-6">
       <img src={item.img} alt={item.title} className="w-full h-60 object-cover rounded" />
@@ -96,7 +93,6 @@ const ItemDetail = () => {
           ))}
         </div>
       )}
-
       {item.options?.batters && (
         <div className="mt-4">
           <label className="block font-medium">Batter:</label>
@@ -115,7 +111,6 @@ const ItemDetail = () => {
           ))}
         </div>
       )}
-
       {item.options?.riceChoices && (
         <div className="mt-4">
           <label className="block font-medium">Choose Your Rice:</label>
@@ -134,7 +129,6 @@ const ItemDetail = () => {
           ))}
         </div>
       )}
-
       {item.options?.toppings && (
         <div className="mt-4">
           <label className="block font-medium">Extra Toppings (Optional):</label>
@@ -157,7 +151,6 @@ const ItemDetail = () => {
           ))}
         </div>
       )}
-
       <div className="mt-4">
         <label className="block font-medium">Quantity:</label>
         <input
@@ -168,7 +161,6 @@ const ItemDetail = () => {
           className="border rounded p-1 w-24 mt-1"
         />
       </div>
-
       <div className="mt-4">
         <label className="block font-medium">Note:</label>
         <textarea
@@ -179,7 +171,6 @@ const ItemDetail = () => {
           rows={3}
         />
       </div>
-
       <button
         onClick={handleAdd}
         disabled={isPreorderClosed}

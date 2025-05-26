@@ -3,10 +3,10 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Headline from "./components/HeadingLine/Headline.jsx";
-import Food from "./Food/Food.jsx";
+import Food from "./components/Food/Food.jsx";
 import Drink from "./components/Drink/Drink.jsx";
 import Dessert from "./components/Dessert/Dessert.jsx";
-import FoodPage from "./Food/FoodPage";
+import FoodPage from "./components/Food/FoodPage.jsx";
 import DrinkPage from "./components/Drink/DrinkPage.jsx";
 import DessertPage from "./components/Dessert/DessertPage.jsx";
 import ItemDetail from "./components/Cart/ItemDetail.jsx";
@@ -18,6 +18,8 @@ import { initInventory } from "./components/utils/inventory.js";
 import Snack from "./components/Snack /Snack.jsx";
 import PromoPage from "./components/Promo/PromoPage.jsx";
 import SnackPage from "./components/Snack /SnackPage.jsx";
+import SearchResults from "./components/SearchResults"; 
+
 const Home = () => {
   return (
     <>
@@ -50,6 +52,8 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/item/:slug" element={<ItemDetail />} />
         <Route path="/admin" element={<AdminStock />} /> {/* ✅ NEW */}
+        <Route path="/search" element={<SearchResults />} />
+
       </Routes>
     </Router>
   );

@@ -11,14 +11,14 @@ const foodData = [
           {label: "Small", price: 59},
           {label: "Big", price: 90},
 
-        ],  // existing
+        ], 
        
-        riceChoices: [ // ✅ Required single choice
+        riceChoices: [ 
           { label: "Plain rice", price: 0 },
           { label: "Rice with lime leaves", price: 10 },
           { label: "Liwet rice", price: 10 },
         ],
-        toppings: [ // ✅ Optional multi-select
+        toppings: [
           { label: "Chicken Liver", price: 10 },
           { label: "Egg (Telur dadar)", price: 15 },
           { label: "Sambal Sachet", price: 25 },
