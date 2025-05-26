@@ -36,6 +36,8 @@ const Cart = () => {
       alert("Please fill in your name and phone number.");
       return;
     }
+    const confirmed = window.confirm("Are you sure you want to place this order?");
+    if (!confirmed) return;
 
     const orderDetails = cart.map((item, idx) => {
       return `${idx + 1}. ${item.title} - ${item.quantity} pcs\n` +
