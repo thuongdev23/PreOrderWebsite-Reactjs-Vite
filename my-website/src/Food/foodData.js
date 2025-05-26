@@ -33,9 +33,9 @@ const foodData = [
 
     },
     {
-      id: 2,
+      id: 8,
       img: '/assets/chicken-skin-stick.png',
-      title: "Nusantara Angkringan - Sate Kulit atau Hati Ayam (Chicken skin or chicken liver skewer)",
+      title: "Nusantara Angkringan - Sate Kulit atau Hati Ayam (Chicken skin or liver skewer)",
       price: 6,
       description: "Sate kulit ayam yang garing di luar, juicy di dalam, atau bisa pilih hati ayam yang lembut dan gurih.\
 Crispy on the outside, juicy on the inside — grilled chicken skin or you can also choose tender, savory chicken liver.",
@@ -154,7 +154,7 @@ Served with veggies and scrambled egg.  ',
 
     },
     {
-      id: 8,
+      id: 2,
       img: '/assets/nusantara-rice-bowl.png',
       title: 'Nusantara Rice Bowl - Ayam Rica-rica',
       price: "59,00",
