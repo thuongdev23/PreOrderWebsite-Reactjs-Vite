@@ -28,14 +28,10 @@ const dessertData = [
       slug: "takoyaki",
       options: {
         fillings: [
-          { label: "Cheese Filling", price: 75 },
-          { label: "Chocolate Filling", price: 75 },
-          { label: "Red Bean Filling", price: 75 }
+          { label: "Cheese", price: 0 },
+          { label: "Sausage", price: 0 },
+          { label: "Mix of Chesse and Sausage", price: 0 }
         ],
-        batters: [
-          { label: "Original (Vanilla)" },
-          { label: "Taro" }
-        ]
       }
     },
     {
