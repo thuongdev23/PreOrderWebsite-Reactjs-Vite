@@ -2,10 +2,16 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 export const CartContext = createContext();
 export const useCart = () => useContext(CartContext);
 export const CartProvider = ({ children }) => {
+  const clearCart = () => {
+    setCart([]);
+    localStorage.removeItem("cart"); // optional: clear saved cart
+  };
+  
   const [cart, setCart] = useState(() => {
     const stored = localStorage.getItem("cart");
     return stored ? JSON.parse(stored) : [];
   });
+  
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -35,9 +41,16 @@ export const CartProvider = ({ children }) => {
     setCart((prevCart) => prevCart.filter((item) => item.uniqueKey !== uniqueKey));
   };
 
+  // return (
+  //   <CartContext.Provider value={{ cart, addToCart, updateCart, removeFromCart }}>
+  //     {children}
+  //   </CartContext.Provider>
+  // );
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, updateCart, removeFromCart }}>
+    <CartContext.Provider value={{ cart, addToCart, updateCart, removeFromCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );
+  
 };

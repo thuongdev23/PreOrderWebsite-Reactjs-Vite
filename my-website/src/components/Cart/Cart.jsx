@@ -5,8 +5,9 @@ import emailjs from "@emailjs/browser";
 
 
 
+
 const Cart = () => {
-  const { cart, updateCart, removeFromCart } = useCart();
+  const { cart, updateCart, removeFromCart, clearCart } = useCart();
   const [userName, setUserName] = useState("");
   const [userPhone, setUserPhone] = useState("");
   const [deliveryMethod, setDeliveryMethod] = useState("Meet-up");
@@ -61,6 +62,7 @@ const Cart = () => {
     emailjs.send("service_qxcwjzt", "template_h01engg", message,"lV3Tl03rNYuousokZ").then(
       () => {
         alert("Order sent! We'll confirm with you shortly.If you make online payment please send the receipt to Whatsapp No: +62 859 528 766 09");
+        clearCart();
       },
       (error) => {
         console.error("Failed to send order:", error);
