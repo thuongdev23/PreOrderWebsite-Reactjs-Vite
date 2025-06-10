@@ -4,7 +4,7 @@ export const useCart = () => useContext(CartContext);
 export const CartProvider = ({ children }) => {
   const clearCart = () => {
     setCart([]);
-    localStorage.removeItem("cart"); // optional: clear saved cart
+    localStorage.removeItem("cart"); 
   };
   
   const [cart, setCart] = useState(() => {
@@ -40,13 +40,6 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = (uniqueKey) => {
     setCart((prevCart) => prevCart.filter((item) => item.uniqueKey !== uniqueKey));
   };
-
-  // return (
-  //   <CartContext.Provider value={{ cart, addToCart, updateCart, removeFromCart }}>
-  //     {children}
-  //   </CartContext.Provider>
-  // );
-
   return (
     <CartContext.Provider value={{ cart, addToCart, updateCart, removeFromCart, clearCart }}>
       {children}

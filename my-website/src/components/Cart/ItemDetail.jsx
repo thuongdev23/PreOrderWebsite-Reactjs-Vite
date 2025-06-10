@@ -16,7 +16,6 @@ const ItemDetail = () => {
   const item = allItems.find((i) => i.slug === slug);
   const { addToCart } = useCart();
   const navigate = useNavigate();
-
   const [quantity, setQuantity] = useState(1);
   const [note, setNote] = useState("");
   const [selectedFilling, setSelectedFilling] = useState("");

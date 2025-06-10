@@ -34,9 +34,9 @@ const Home = () => {
 };
 
 const App = () => {
-  // useEffect(() => {
-  //   initInventory(foodData); // ✅ Initialize stock once
-  // }, []);
+  useEffect(() => {
+    initInventory(foodData); // ✅ Initialize stock once
+  }, []);
 
   return (
     <Router>
@@ -48,10 +48,9 @@ const App = () => {
         <Route path="/dessert-page" element={<DessertPage />} />
         <Route path="/promo-page" element={<PromoPage />} />
         <Route path="/snack-page" element={<SnackPage />} />
-
         <Route path="/cart" element={<Cart />} />
         <Route path="/item/:slug" element={<ItemDetail />} />
-        <Route path="/admin" element={<AdminStock />} /> {/* ✅ NEW */}
+        <Route path="/admin" element={<AdminStock />} /> 
         <Route path="/search" element={<SearchResults />} />
 
       </Routes>
