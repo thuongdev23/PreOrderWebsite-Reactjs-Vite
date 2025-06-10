@@ -12,7 +12,7 @@ import DessertPage from "./components/Dessert/DessertPage.jsx";
 import ItemDetail from "./components/Cart/ItemDetail.jsx";
 import Cart from "./components/Cart/Cart.jsx";
 import Promo from "./components/Promo/Promo.jsx";
-
+import foodData from "./components/Food/FoodData.js";
 import AdminStock from "./components/AdminStock.jsx";
 import { initInventory } from "./components/utils/inventory.js";
 import Snack from "./components/Snack /Snack.jsx";
