@@ -34,9 +34,9 @@ const Home = () => {
 };
 
 const App = () => {
-  useEffect(() => {
-    initInventory(foodData); // ✅ Initialize stock once
-  }, []);
+  // useEffect(() => {
+  //   initInventory(foodData); // ✅ Initialize stock once
+  // }, []);
 
   return (
     <Router>
