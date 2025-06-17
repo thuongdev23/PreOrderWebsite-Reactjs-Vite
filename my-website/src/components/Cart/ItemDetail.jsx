@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-// import foodData from "../Food/foodData";
-import foodData from "../Food/FoodData";
+import foodData from "../Food/foodData";
+// import foodData from "../Food/FoodData";
 import drinkData from "../Drink/drinkData";
 import dessertData from "../Dessert/dessertData";
 import promoData from "../Promo/promoData";

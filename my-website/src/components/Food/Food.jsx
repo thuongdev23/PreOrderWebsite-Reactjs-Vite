@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import foodData from "./foodData";
-
+// import foodData from "./foodData";
+// import foodData from "./FoodData";
+import foodData from "../Food/foodData";
 const Food = () => {
   const previewItems = foodData.slice(0, 4); // show only 4 items
 
