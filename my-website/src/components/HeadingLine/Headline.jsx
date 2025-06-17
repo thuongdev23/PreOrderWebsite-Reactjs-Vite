@@ -27,7 +27,7 @@ const Headline = () => {
       </div>
 
       <p className="mt-2 text-sm text-gray-700 font-medium">
-        #Pre-Order Untuk 22–23 Mei#
+        #Pre-Order Untuk 17-20 Juni#
       </p>
 
       <p className="mt-1 text-sm text-gray-600 max-w-md">

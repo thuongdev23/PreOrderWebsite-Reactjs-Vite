@@ -36,6 +36,12 @@ const promoData = [
         description: 'Crispy katsu meets cozy Japanese curry. Finished with sweet-sour kumquat tea!.\
         Katsu renyah berpadu dengan kari Jepang yang creamy. Ditemani teh kumquat yang manis-asam!',
         slug: 'Japanese Curry with Chicken Katsu+Kumquat Tea',
+        options:{
+          toppings: [
+          { label: "Salad", price: 50 },
+          { label: "Mayonnaise", price: 30 },
+          ]
+        },
 
     },
      {
@@ -46,7 +52,16 @@ const promoData = [
         description: 'Your favorite Hokben-style bowl with savory yakiniku and egg roll. Comes with iced tea to cool it down!\
                     Rice bowl ala Hokben favoritmu—dengan ayam yakiniku dan egg roll, lengkap dengan es teh penyejuk!',
         slug: 'Rice Bowl ala Hokben (with chicken yakiniku)+Ice Tea',
-
+             options: {
+        toppings: [
+          { label: "Egg", price: 15 },
+          { label: "Ekado", price: 30 },
+          { label: "Egg Roll", price: 30 },
+          { label: "Salad", price: 50 },
+          { label: "Mayonnaise", price: 30 },
+         
+        ]
+      },
     },
      {
         id: 4,
