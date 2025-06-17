@@ -1,7 +1,7 @@
 import React from "react";
 const drinkData = [
   {
-    id: 1,
+    id: 3,
     img: '/assets/lattematcha.png',
     title: 'Matcha Latte — Si Hijau Manja',
     price: 69,
@@ -17,6 +17,7 @@ We use ceremonial grade only.',
       toppings: [ // ✅ Optional multi-select
         { label: "Hot", price: 0 },
         { label: "Iced", price: 0},
+         { label: "Strawberry Jam", price: 10},
       ]
     },
   },
@@ -43,7 +44,7 @@ We use ceremonial grade only.',
       },
     },
     {
-      id: 3,
+      id: 8,
       img: '/assets/hojichalatte.png',
       title: "Hojicha Latte - Si Hangat Lembut",
       price: 69,
@@ -61,13 +62,34 @@ We use ceremonial grade only.',
         ]
       },
     },
-    {
+        {
       id: 4,
-      img: '/assets/kumquattea.png',
-      title: "Kumquat Tea - Si Asem Ceria",
-      price: 59,
-      description: 'Zesty, fresh, and a lil’ chaotic. Just like your BFF.',
-      slug: "Kumquat Tea - Si Asem Ceria",
+      img: '/assets/redVelvet.png',  //need to change the photo
+      title: "Red Velvet Latte",
+      price: 69,
+      description: 'A rich, velvety hug in a cup—sweet, creamy, and oh-so-pretty!\
+      Rasanya lembut dan manis seperti pelukan—cantik di mata, enak di lidah!',
+      slug:  "Red Velvet Latte",
+      options: {
+        fillings: [
+          {label: "Small", price: 69},
+          {label: "Big", price: 79},
+          {label: "Tall", price: 89},
+        ],  // existing
+        toppings: [ // ✅ Optional multi-select
+          { label: "Hot", price: 0 },
+          { label: "Iced", price: 0},
+        ]
+      },
+    },
+            {
+      id: 5,
+      img: '/assets/taroLatte.png',  //need to change the photo
+      title: "Taro Latte",
+      price: 69,
+      description: 'Creamy and dreamy with that signature purple taro flavor!\
+      Lembut dan manis dengan cita rasa talas ungu yang khas!',
+      slug:  "Taro Latte",
       options: {
         fillings: [
           {label: "Small", price: 69},
@@ -81,7 +103,26 @@ We use ceremonial grade only.',
       },
     },
     {
-      id: 5,
+      id: 7,
+      img: '/assets/kumquattea.png',
+      title: "Kumquat Tea - Si Asem Ceria",
+      price: 59,
+      description: 'Zesty, fresh, and a lil’ chaotic. Just like your BFF.',
+      slug: "Kumquat Tea - Si Asem Ceria",
+      options: {
+        fillings: [
+          {label: "Small", price: 59},
+          {label: "Big", price: 69},
+          {label: "Tall", price: 79},
+        ],  // existing
+        toppings: [ // ✅ Optional multi-select
+          { label: "Hot", price: 0 },
+          { label: "Iced", price: 0},
+        ]
+      },
+    },
+    {
+      id: 1,
       img: "/assets/es-teh-peng.png",
       title: "Es Teh Pengkolan (Iced tea)",
       price: 59,
@@ -96,6 +137,7 @@ We use ceremonial grade only.',
         toppings: [ // ✅ Optional multi-select
           // { label: "Hot", price: 0 },
           { label: "Iced", price: 0},
+           {  label: "Hot", price: 0},
         ]
       },
     },

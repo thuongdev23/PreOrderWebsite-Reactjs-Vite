@@ -34,30 +34,30 @@ const dessertData = [
         ],
       }
     },
-    {
-      id: 3,
-      img: '/assets/onde-onde.jpg',
-      title: "Onde-onde",
-      price: 60,
-      description: '3 pcs of glutinous rice ball with mung bean filling and sesame coating.',
-      slug: "Onde-onde",
-    },
-    {
-      id: 4,
-      img: '/assets/es-kue-gabus.png',
-      title: "Es Kue Gabus",
-      price: 50,
-      description: '3 Pcs of Classic icy cake bars from childhood. Sweet, nostalgic, and fun to eat!',
-      slug: "Es Kue Gabus"
-    },
-    {
-      id: 5,
-      img: "/assets/es-mambo.jpg",
-      title: "Es Mambo Buah",
-      price: 50,
-      description: '3 pcs of frozen fruit pops using fresh seasonal fruits',
-      slug:  "Es Mambo Buah"
-    },
+    // {
+    //   id: 3,
+    //   img: '/assets/onde-onde.jpg',
+    //   title: "Onde-onde",
+    //   price: 60,
+    //   description: '3 pcs of glutinous rice ball with mung bean filling and sesame coating.',
+    //   slug: "Onde-onde",
+    // },
+    // {
+    //   id: 4,
+    //   img: '/assets/es-kue-gabus.png',
+    //   title: "Es Kue Gabus",
+    //   price: 50,
+    //   description: '3 Pcs of Classic icy cake bars from childhood. Sweet, nostalgic, and fun to eat!',
+    //   slug: "Es Kue Gabus"
+    // },
+    // {
+    //   id: 5,
+    //   img: "/assets/es-mambo.jpg",
+    //   title: "Es Mambo Buah",
+    //   price: 50,
+    //   description: '3 pcs of frozen fruit pops using fresh seasonal fruits',
+    //   slug:  "Es Mambo Buah"
+    // },
     // Add more as needed...
   ];
   
