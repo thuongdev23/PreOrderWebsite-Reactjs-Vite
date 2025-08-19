@@ -61,17 +61,17 @@ const promoData = [
     },
        {
         id: 4,
-        img: '/assets/nusantara-rice-bowl-matah.png',
+        img: '/assets/bowlSambalIjoCombo.jpeg',
         title: "Rice Bowl Ayam Sambal Ijo",
         price: 75,
         // description: 'Crispy katsu meets cozy Japanese curry. Finished with sweet-sour kumquat tea!.\
         // Katsu renyah berpadu dengan kari Jepang yang creamy. Ditemani teh kumquat yang manis-asam!',
         slug: 'Rice Bowl Ayam Sambal Ijo',
         options:{
-          toppings: [
-          { label: "Salad", price: 50 },
-          { label: "Mayonnaise", price: 30 },
-          ]
+          // toppings: [
+          // { label: "Salad", price: 50 },
+          // { label: "Mayonnaise", price: 30 },
+          // ]
         },
 
     },

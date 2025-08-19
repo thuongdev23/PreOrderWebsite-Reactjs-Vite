@@ -117,6 +117,21 @@ const foodData = [
         // ]
       },
     },
+         {
+      id: 2,
+      img: '/assets/bowlSambalIjo.jpeg',
+      title: 'Bowl Ayam Sambal Korek Ijo',
+      price: "75,00",
+      // description: 'Crispy katsu over rich Japanese curry—comfort food at its finest!',
+      slug: 'Bowl Ayam Sambal Korek Ijou',
+      options: {
+        fillings: [
+          {label: "Small", price: 75},
+          {label: "Big", price: 95},
+
+        ],
+      }
+    },
     ///////
       {
       id: 5,
