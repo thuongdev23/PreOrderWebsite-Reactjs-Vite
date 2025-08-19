@@ -130,14 +130,14 @@ const Cart = () => {
 
           <input
             type="tel"
-            placeholder="Phone Number should be active on Whatsapp"
+            placeholder="*Phone Number should be active on Whatsapp*"
             value={userPhone}
             onChange={(e) => setUserPhone(e.target.value)}
             className="border p-2 mt-2 w-full"
           />
           <input
             type="email"
-            placeholder="Your Email"
+            placeholder="*Your Email Need to be filled in*"
             value={userEmail}
             onChange={(e) => setUserEmail(e.target.value)}
             className="border p-2 mt-2 w-full"
