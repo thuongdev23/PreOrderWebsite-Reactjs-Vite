@@ -38,8 +38,8 @@ const promoData = [
         slug: 'Japanese Curry with Chicken Katsu+Matcha',
         options:{
           toppings: [
-          { label: "Salad", price: 50 },
-          { label: "Mayonnaise", price: 30 },
+          // { label: "Salad", price: 50 },
+          // { label: "Mayonnaise", price: 30 },
           ]
         },
 
@@ -54,15 +54,15 @@ const promoData = [
         slug: 'Rice Bowl Ayam Matah + es teh',
         options:{
           toppings: [
-          { label: "Salad", price: 50 },
-          { label: "Mayonnaise", price: 30 },
+          // { label: "Salad", price: 50 },
+          // { label: "Mayonnaise", price: 30 },
           ]
         },
     },
        {
         id: 4,
         img: '/assets/bowlSambalIjoCombo.jpeg',
-        title: "Rice Bowl Ayam Sambal Ijo",
+        title: "Rice Bowl Ayam Sambal Korek Ijo + Es teh",
         price: 75,
         // description: 'Crispy katsu meets cozy Japanese curry. Finished with sweet-sour kumquat tea!.\
         // Katsu renyah berpadu dengan kari Jepang yang creamy. Ditemani teh kumquat yang manis-asam!',
