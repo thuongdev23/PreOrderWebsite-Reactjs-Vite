@@ -29,14 +29,14 @@ const snackData = [
       id: 1,
       img: '/assets/tayaki.jpg',
       title: "Taiyaki",
-      price: 50,
+      price: 75,
       description: '2 Pcs of fish-shaped pancake filled with sweet or savory options. Crispy on the outside, soft on the inside. Cuteness you can bite.',
       slug: "Taiyaki",
       options: {
         fillings: [
-          { label: "Cheese Filling", price: 50 },
-          { label: "Chocolate Filling", price: 50 },
-          { label: "Red Bean Filling", price: 60 }
+          { label: "Cheese Filling", price: 75 },
+          { label: "Chocolate Filling", price: 75 },
+          // { label: "Red Bean Filling", price: 85 }
         ],
         batters: [
           { label: "Original (Vanilla)" },

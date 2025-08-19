@@ -64,25 +64,25 @@ We use ceremonial grade only.',
         ]
       },
     },
-    {
-      id: 8,
-      img: '/assets/hojichalatte.png',
-      title: "Hojicha Latte - Si Hangat Lembut",
-      price: 69,
-      description: 'Toasty vibes only. Roasted tea + creamy hug = pure comfort.',
-      slug:  "Hojicha Latte - Si Hangat Lembut",
-      options: {
-        fillings: [
-          {label: "Small", price: 69},
-          {label: "Big", price: 79},
-          {label: "Tall", price: 89},
-        ],  // existing
-        toppings: [ // ✅ Optional multi-select
-          { label: "Hot", price: 0 },
-          { label: "Iced", price: 0},
-        ]
-      },
-    },
+    // {
+    //   id: 8,
+    //   img: '/assets/hojichalatte.png',
+    //   title: "Hojicha Latte - Si Hangat Lembut",
+    //   price: 69,
+    //   description: 'Toasty vibes only. Roasted tea + creamy hug = pure comfort.',
+    //   slug:  "Hojicha Latte - Si Hangat Lembut",
+    //   options: {
+    //     fillings: [
+    //       {label: "Small", price: 69},
+    //       {label: "Big", price: 79},
+    //       {label: "Tall", price: 89},
+    //     ],  // existing
+    //     toppings: [ // ✅ Optional multi-select
+    //       { label: "Hot", price: 0 },
+    //       { label: "Iced", price: 0},
+    //     ]
+    //   },
+    // },
         {
       id: 4,
       img: '/assets/redVelvet.png',  //need to change the photo

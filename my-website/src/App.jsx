@@ -26,7 +26,7 @@ const Home = () => {
       <Promo/>
       <Food />
       <Drink />
-      <Dessert />
+      {/* <Dessert /> */}
       <Snack/>
     </>
   );
