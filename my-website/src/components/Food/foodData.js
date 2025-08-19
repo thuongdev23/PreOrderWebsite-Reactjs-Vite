@@ -301,8 +301,9 @@ const foodData = [
         fillings: [
           {label: "Small", price: 75},
           {label: "Big", price: 95},
+        ]
 
-        ], 
+        // ], 
       //   riceChoices: [ 
       //     { label: "Plain rice", price: 0 },
       //     { label: "Rice with lime leaves", price: 10 },
@@ -319,6 +320,7 @@ const foodData = [
       //   ]
       // },
       // defaultStock: 10
+      }
     },
   //     {
   //     id: 4,
@@ -384,7 +386,7 @@ const foodData = [
     //   defaultStock: 10
 
     // },
-  ];
+  ]
   
   export default foodData;
   
