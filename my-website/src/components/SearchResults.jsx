@@ -1,6 +1,6 @@
 // SearchResults.jsx
 import { useSearchParams } from "react-router-dom";
-import foodData from "./Food/FoodData";
+import foodData from "./Food/foodData";
 import drinkData from "./Drink/drinkData";
 import dessertData from "./Dessert/dessertData";
 import snackData from "./Snack /snackData";
