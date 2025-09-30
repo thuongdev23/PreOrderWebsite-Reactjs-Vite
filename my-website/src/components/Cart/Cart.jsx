@@ -166,7 +166,7 @@ const Cart = () => {
             <option>Bağlar</option>
             <option>İsmet İnönü</option>
             <option>Çarşı</option>
-            <option>None of the above</option>
+            <option>None of the above option</option>
           </select>
 
           <label className="block mt-4">Payment Method:</label>
