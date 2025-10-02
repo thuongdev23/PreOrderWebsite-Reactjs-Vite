@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import promoData from "./promoData";
+// import AdBanner from "../AdBanner";
+// import AdBanner from "../Adbanner";
 import AdBanner from "../AdBanner";
 
 const Promo = () => {
