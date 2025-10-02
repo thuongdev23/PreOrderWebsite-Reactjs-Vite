@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import promoData from "./promoData";
-import AdBanner from "../Adbanner";
+import AdBanner from "../AdBanner";
 
 const Promo = () => {
   const previewItems = promoData.slice(0, 4); // show only 4 items
