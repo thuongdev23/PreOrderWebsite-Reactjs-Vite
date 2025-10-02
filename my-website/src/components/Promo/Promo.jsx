@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import promoData from "./promoData";
+import AdBanner from "../Adbanner";
 
 const Promo = () => {
   const previewItems = promoData.slice(0, 4); // show only 4 items
 
   return (
+   
     <div className="p-6 bg-white rounded-lg shadow-md">
+      <AdBanner/>
       <h2 className="text-2xl font-bold mb-4 text-center">Promo</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {previewItems.map((item) => (
